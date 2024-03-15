@@ -1,0 +1,327 @@
+*{
+  margin: 0; 
+  padding: 0;
+}
+body{
+  touch-action: none;
+}
+#shoe-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: white;
+  position: absolute;
+}
+
+.left-panel {
+  background-color: #f2f2f2;
+  position: relative;
+}
+#model-container{
+  height: 100%;
+  width: 100%;
+}
+.right-panel {
+  background: transparent;
+  padding: 1.5vw 2.5vw;
+  padding-left: 3.25vw;
+  box-sizing: border-box;
+}
+.product-name {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-top: 15vh;
+  font-family: OpenSans-Semibold;
+  width: 85%;
+}
+
+.price-info {
+  color: #004588;
+  font-size: 1.125vw;
+  font-family: OpenSans-Semibold;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* Colors */
+.Color_Btns {
+  margin-top: 9vh;
+}
+
+.color-heading {
+  font-family: OpenSans-Semibold;
+  font-size: 1.25vw;
+  font-weight: bold;
+}
+
+.color-button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  left: -3%;
+  gap: 1.5vw;
+  grid-gap: 1.5vw;
+  margin-top: 1.5vw;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.color_name {
+  font-family: OpenSans-Regular;
+  font-size: 0.8vw;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.color-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.color-button-circle {
+  width: 3vw;
+  height: 3vw;
+  margin-bottom: 0.75vh;
+  pointer-events: none;
+  border: 0.4vw solid #eee; 
+  border-radius: 50%; 
+  transition: all 0.3s ease;
+}
+
+.color-button:active > span:first-child {
+  transform: scale(1.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.color-name {
+  color: #231F20;
+  font-size: 0.8vw;
+  font-family: OpenSans-Regular;
+}
+
+
+@font-face {
+	font-family: OpenSans-Bold;
+	src: url("/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: OpenSans-Lightr;
+	src: url("/fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url("/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: OpenSans-Semibold;
+	src: url("/fonts/OpenSans-Semibold.ttf");
+}
+
+/* media queries starts here */
+
+@media only screen and (max-device-width: 1024px) {
+  #shoe-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+  }
+
+  .left-panel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 3vw 6vw;
+  }
+  .product-name {
+    margin-top: 0;
+    font-size: 2.5vw;
+  }
+
+  .price-info {
+    font-size: 1.625vw;
+    margin-top: 0.25rem;
+  }
+
+  .bottom_clr_section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+  }
+
+  .Color_Btns {
+    margin-top: 0;
+  }
+
+  .color-button-container {
+    grid-template-columns: repeat(4, 1fr);
+    left: -3%;
+    margin-top: 1.5vw;
+    gap: 2vw 2.5vw;
+    grid-gap: 2vw 2.5vw;
+  }
+
+  .color-heading, .layer-heading {
+    font-size: 2vw;
+  }
+
+  .color-button-circle {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .color-name {
+    font-size: 1.25vw;
+  }
+
+  
+}
+
+@media screen and (max-device-width: 912px) {
+  .product-name {
+    font-size: 2.75vw;
+  }
+
+  .price-info {
+    font-size: 1.75vw;
+  }
+
+  .color-button-circle {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  .color-name {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .right-panel {
+    padding: 3.25vw 6vw;
+  }
+
+  .product-name {
+    font-size: 3vw;
+  }
+
+  .price-info {
+    font-size: 2vw;
+  }
+
+  .bottom_clr_section {
+    display: flex;
+  }
+
+  .color-heading {
+    font-size: 2.5vw;
+  }
+
+  .color-button-circle {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .color-name {
+    font-size: 1.75vw;
+  }
+
+  
+}
+
+@media only screen and (max-device-width: 700px) {
+  .color-button-circle {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  
+  .right-panel {
+    padding: 3.75vw 6vw;
+  }
+
+  .product-name {
+    font-size: 3vw;
+  }
+
+  .price-info {
+    font-size: 2.25vw;
+  }
+
+  .color-heading, .layer-heading {
+    font-size: 2.75vw;
+  }
+
+  .color-button-circle {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .color-name {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+
+  .right-panel {
+    padding: 4vw 6vw;
+  }
+  .product-name {
+    font-size: 3.5vw;
+  }
+
+  .price-info {
+    font-size: 3vw;
+  }
+
+  .bottom_clr_section {
+    display: flex;
+  }
+
+  .color-button-container {
+    left: -3%;
+    margin-top: 2.5vw;
+    gap: 2.5vw;
+    grid-gap: 2.5vw;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .color-button-circle {
+    width: 6.5vw;
+    height: 6.5vw;
+    border: 1vw solid #f8f8f8; 
+  }
+
+  .color-heading, .layer-heading {
+    font-size: 3.25vw;
+  }
+
+  .color-name {
+    font-size: 2.25vw;
+  }
+
+  
+}

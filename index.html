@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>ModelViewer - Configurator</title>
+	<link rel="preload" href="./fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin />
+	<link rel="preload" href="./fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin />
+	<link rel="preload" href="./fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin />
+	<link rel="preload" href="./fonts/OpenSans-Semibold.ttf" as="font" type="font/ttf" crossorigin />
+	<link rel="stylesheet" href="./css/Styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.js"></script>
+</head>
+
+<body>
+
+	<div id="shoe-info" style="height: 100%;">
+		<div class="left-panel">
+			<model-viewer id="model-container" src="./assets/model/WorkTest-Table.glb" auto-rotate
+				auto-rotate-delay="100" ar-modes="webxr scene-viewer quick-look" camera-controls
+				shadow-intensity="1" disable-pan disable-tap>
+			</model-viewer>
+		</div>
+
+		<div class="right-panel" id="rightpanel_id">
+			<div class="top_heading">
+				<div class="product-name">Table</div>
+			</div>
+			<div class="price-info">
+				Price: $ <span>100</span>
+			</div>
+
+			<div class="bottom_clr_section">
+				<div class="Color_Btns">
+					<div class="color-heading">Top Colors</div>
+					<div class="color-button-container">
+						<div class="color">
+							<button class="color-button top-variants" value="Ash">
+								<span class="color-button-circle" style="background-image : url(./assets/icons/ash_icon.png); "></span>
+								<span class="color-name">Ash</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button top-variants" value="Grey">
+								<span class="color-button-circle" style="background-image : url(./assets/icons/grey_icon.png);"></span>
+								<span class="color-name">Grey</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button top-variants" value="Kayar">
+								<span class="color-button-circle" style="background-image : url(./assets/icons/kayar_icon.png);"></span>
+								<span class="color-name">Kayar</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button top-colors" data-color="#e58a8a">
+								<span class="color-button-circle" style="background-color: #e58a8a;"></span>
+								<span class="color-name">Rose</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button top-colors" data-color="#95603f">
+								<span class="color-button-circle" style="background-color: #95603f;"></span>
+								<span class="color-name">Falls</span>
+							</button>
+						</div>
+                        <div class="color">
+							<button class="color-button top-colors" data-color="#7776BB">
+								<span class="color-button-circle" style="background-color: #7776BB;"></span>
+								<span class="color-name">Window</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+            <div class="bottom_clr_section">
+				<div class="Color_Btns">
+					<div class="color-heading">Leg Colors</div>
+					<div class="color-button-container">
+                        <div class="color">
+							<button class="color-button bottom-colors" data-color="#ffffff">
+								<span class="color-button-circle" style="background-image : url(./assets/icons/ash_icon.png);"></span>
+								<span class="color-name">Ash</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button bottom-colors" data-color="#e58a8a">
+								<span class="color-button-circle" style="background-color: #e58a8a;"></span>
+								<span class="color-name">Rose</span>
+							</button>
+						</div>
+						<div class="color">
+							<button class="color-button bottom-colors" data-color="#95603f">
+								<span class="color-button-circle" style="background-color: #95603f;"></span>
+								<span class="color-name">Falls</span>
+							</button>
+						</div>
+                        <div class="color">
+							<button class="color-button bottom-colors" data-color="#7776BB">
+								<span class="color-button-circle" style="background-color: #7776BB;"></span>
+								<span class="color-name">Window</span>
+							</button>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+    <script type="module" src="./js/Configurator.js"></script>
+
+</body>
+
+</html>
