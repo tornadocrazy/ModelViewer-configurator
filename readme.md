@@ -1,18 +1,15 @@
-Overview
+# Simple Product Configurator for a Table
 
-A simple product configurator for table. 
-Its a simple static Page, its currently not meant to be for any other model because it can have some issues with configurater.js. A change of materials might be required in configurator.js for any other model.
+## Overview
 
-For making it more dynamic for any model we need to setup a json like structure where model can store its changable material/mesh info that can be fetched directly.
-A CMP will also be needed to make more dynamic.
+This is a simple static page product configurator for a table. It's currently not meant to be used for any other model due to potential issues with `configurator.js`. Changing materials might require modifications in `configurator.js` for any other model.
 
+To make it more dynamic for any model, we need to set up a JSON-like structure where the model can store its changeable material/mesh info that can be fetched directly. A Content Management Platform (CMP) will also be needed to make it more dynamic.
 
-How to run
+## How to Run
 
-Use any methods below: 
+You can use any of the methods below:
 
-Direct deploy to netlify.
-
-Live server extension of Ritwick dey is a great choice.
-
-Any simple server can host.
+- Direct deploy to Netlify.
+- Live Server extension by Ritwick Dey is a great choice.
+- Any simple server can host.
