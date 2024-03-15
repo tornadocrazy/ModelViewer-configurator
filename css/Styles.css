@@ -141,22 +141,22 @@ body{
 
 @font-face {
 	font-family: OpenSans-Bold;
-	src: url("/fonts/OpenSans-Bold.ttf");
+	src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
 	font-family: OpenSans-Lightr;
-	src: url("/fonts/OpenSans-Light.ttf");
+	src: url("../fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
 	font-family: OpenSans-Regular;
-	src: url("/fonts/OpenSans-Regular.ttf");
+	src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
 	font-family: OpenSans-Semibold;
-	src: url("/fonts/OpenSans-Semibold.ttf");
+	src: url("../fonts/OpenSans-Semibold.ttf");
 }
 
 /* media queries starts here */
