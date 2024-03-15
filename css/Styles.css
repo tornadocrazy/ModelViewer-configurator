@@ -19,7 +19,7 @@ body{
 }
 #loader > img{
   animation: rotate 1.25s linear infinite;
-  /* width: 30%; */
+  width: 7%;
 }
 @keyframes rotate {
   0% {
@@ -281,7 +281,9 @@ body{
 }
 
 @media only screen and (max-device-width: 600px) {
-  
+  #loader > img{
+    width: 12%;
+  }
   .right-panel {
     padding: 3.75vw 6vw;
   }
@@ -309,7 +311,9 @@ body{
 }
 
 @media only screen and (max-device-width: 480px) {
-
+  #loader > img{
+    width: 16%;
+  }
   .right-panel {
     padding: 4vw 6vw;
   }
