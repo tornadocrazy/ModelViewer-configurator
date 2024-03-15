@@ -9,13 +9,16 @@
 	<link rel="preload" href="./fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin />
 	<link rel="preload" href="./fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin />
 	<link rel="preload" href="./fonts/OpenSans-Semibold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" as="image" href="./assets/icons/Circle Loader.png" />
 	<link rel="stylesheet" href="./css/Styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.js"></script>
 </head>
 
 <body>
-
-	<div id="shoe-info" style="height: 100%;">
+    <div id="loader">
+        <img src="./assets/icons/Circle Loader.png" alt="">
+    </div>
+	<div id="product-info" style="height: 100%;">
 		<div class="left-panel">
 			<model-viewer id="model-container" src="./assets/model/WorkTest-Table.glb" auto-rotate
 				auto-rotate-delay="100" ar-modes="webxr scene-viewer quick-look" camera-controls
@@ -110,6 +113,7 @@
 			</div>
 		</div>
 	</div>
+    
     <script type="module" src="./js/Configurator.js"></script>
 
 </body>

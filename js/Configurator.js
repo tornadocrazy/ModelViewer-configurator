@@ -61,6 +61,9 @@ modelViewerElement.addEventListener('load', () => {
       });
     });
   });
+
+  //Hide Loader after all loading
+  document.getElementById("loader").style.display = "none";
 });
 
 
