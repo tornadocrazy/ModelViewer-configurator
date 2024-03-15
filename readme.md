@@ -18,3 +18,11 @@ You can use any of the methods below:
 ## Deployed Link
 
 https://worktest-3d.netlify.app/
+
+##Demo Screenshots
+
+Desktop
+<img src="./readme-assets/desktop.png">
+
+Mobile
+<img src="./readme-assets/mobile.png">
