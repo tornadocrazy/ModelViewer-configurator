@@ -13,3 +13,8 @@ You can use any of the methods below:
 - Direct deploy to Netlify.
 - Live Server extension by Ritwick Dey is a great choice.
 - Any simple server can host.
+
+
+## Deployed Link
+
+https://worktest-3d.netlify.app/
