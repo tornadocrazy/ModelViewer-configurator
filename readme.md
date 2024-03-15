@@ -25,4 +25,4 @@ Desktop
 <img src="./readme-assets/desktop.png">
 
 Mobile
-<img src="./readme-assets/mobile.png">
+<img src="./readme-assets/mobile.jpg">
